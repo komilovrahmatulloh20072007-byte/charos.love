@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Admin | Charos Love</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin.css" />
+</head>
+<body>
+  <main class="admin-shell">
+    <section class="login-card" id="loginCard">
+      <h1>🔐 Admin</h1>
+      <p>Javoblarni ko'rish uchun parol kiriting.</p>
+      <input id="passwordInput" type="password" placeholder="Admin parol" />
+      <button id="loginBtn">Kirish</button>
+      <small id="loginError"></small>
+    </section>
+
+    <section class="dashboard hidden" id="dashboard">
+      <header class="admin-header">
+        <div>
+          <h1>💖 Javoblar</h1>
+          <p id="countText">0 ta javob</p>
+        </div>
+        <div class="actions">
+          <button id="refreshBtn">Yangilash</button>
+          <button class="danger" id="deleteAllBtn">Hammasini o'chirish</button>
+        </div>
+      </header>
+
+      <div class="list" id="list"></div>
+    </section>
+  </main>
+
+  <div class="modal hidden" id="modal">
+    <div class="modal-card">
+      <button class="close" id="closeModal">×</button>
+      <div id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="/admin.js"></script>
+</body>
+</html>

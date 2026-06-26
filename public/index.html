@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Charos uchun sovg'a</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="aurora"></div>
+  <div class="petals" id="petals"></div>
+  <div class="sparkles" id="sparkles"></div>
+
+  <main class="phone-shell">
+    <section class="screen active intro" data-page="welcome">
+      <div class="badge">Rahmatullohdan kichkina sirli sovg'a</div>
+      <div class="hero-heart">❤</div>
+      <h1>Salom, Charos</h1>
+      <p class="lead">Bugun bu sahifa faqat senga atalgan. Har bir joyida mehr, iliqlik va seni o'ylab yozilgan gaplar bor.</p>
+      <p class="soft-note">Senga bir sovg'am bor. Uni ochishdan oldin seni yanada yaxshiroq bilishni xohlayman.</p>
+      <button class="main-btn" data-next>Boshlash 🌸</button>
+    </section>
+
+    <section class="screen" data-page="about">
+      <div class="mini-title">1 / 6</div>
+      <h2>O'zing haqingda</h2>
+      <p>Men seni har kuni ko'proq tushunishni, ko'proq qadrlashni xohlayman.</p>
+      <div class="form-grid">
+        <input required name="name" placeholder="Isming" value="Charos" />
+        <input required name="birthday" placeholder="Tug'ilgan kuning" />
+        <input required name="color" placeholder="Sevimli ranging" />
+      </div>
+      <button class="main-btn" data-next>Keyingisi ❤️</button>
+    </section>
+
+    <section class="screen" data-page="likes">
+      <div class="mini-title">2 / 6</div>
+      <h2>Yoqtirgan narsalaring</h2>
+      <p>Seni xursand qiladigan kichkina narsalarni bilsam, ularni ko'proq qilishga harakat qilaman.</p>
+      <div class="form-grid">
+        <input required name="flower" placeholder="Sevimli guling" />
+        <input required name="sweet" placeholder="Sevimli shirinliging" />
+        <input required name="song" placeholder="Sevimli qo'shig'ing" />
+        <input required name="movie" placeholder="Sevimli filming" />
+      </div>
+      <button class="main-btn" data-next>Keyingisi ❤️</button>
+    </section>
+
+    <section class="screen" data-page="treatment">
+      <div class="mini-title">3 / 6</div>
+      <h2>Senga qanday muomala yoqadi?</h2>
+      <p>Men seni ranjitmaslikni, xafa bo'lsang yoningda turishni, ko'nglingni mehr bilan olishni istayman.</p>
+      <div class="form-grid">
+        <textarea required name="treatment" placeholder="Qanday gaplar, qanday muomala seni baxtli qiladi?"></textarea>
+        <textarea required name="comfort" placeholder="Xafa bo'lsang seni qanday ovutishimni xohlaysan?"></textarea>
+      </div>
+      <button class="main-btn" data-next>Keyingisi ❤️</button>
+    </section>
+
+    <section class="screen" data-page="dreams">
+      <div class="mini-title">4 / 6</div>
+      <h2>Orzularing</h2>
+      <p>Sening orzularing men uchun oddiy gap emas. Men ularni eshitib, yoningda turishni xohlayman.</p>
+      <div class="form-grid">
+        <textarea required name="dream" placeholder="Eng katta orzuing nima?"></textarea>
+        <input required name="place" placeholder="Qaysi joyga borishni xohlaysan?" />
+        <textarea required name="future" placeholder="Kelajagingni qanday tasavvur qilasan?"></textarea>
+      </div>
+      <button class="main-btn" data-next>Keyingisi ❤️</button>
+    </section>
+
+    <section class="screen" data-page="us">
+      <div class="mini-title">5 / 6</div>
+      <h2>Biz haqimizda</h2>
+      <p>Men mukammal emasman, lekin seni sevishda, seni asrashda va qadrlashda chin dildan harakat qilaman.</p>
+      <div class="form-grid">
+        <textarea required name="like_me" placeholder="Menda eng yoqtirgan jihating nima?"></textarea>
+        <textarea required name="first_feeling" placeholder="Meni birinchi ko'rganingda qanday taassurot bo'lgan?"></textarea>
+        <input required name="one_word" placeholder="Meni bir so'z bilan tarifla" />
+      </div>
+      <button class="main-btn" data-next>Keyingisi ❤️</button>
+    </section>
+
+    <section class="screen" data-page="memory">
+      <div class="mini-title">6 / 6</div>
+      <h2>Xotiralarimiz</h2>
+      <p>Senga bog'liq har bir xotira yuragimda juda iliq joyda turadi.</p>
+      <div class="form-grid">
+        <textarea required name="memory_day" placeholder="Eng esda qolgan kunimiz qaysi?"></textarea>
+        <textarea required name="funny_memory" placeholder="Eng kulgili yoki shirin voqeani yoz"></textarea>
+      </div>
+      <button class="main-btn" data-next>Sovg'ani ochish 🎁</button>
+    </section>
+
+    <section class="screen gift" data-page="gift">
+      <div class="countdown" id="countdown">3</div>
+      <div class="gift-content hidden" id="giftContent">
+        <h2>Senga atalgan sovg'a</h2>
+        <div class="video-frame">
+          <video id="giftVideo" playsinline controls preload="metadata">
+            <source src="/assets/video/vd.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <p class="type-text" id="typeText"></p>
+        <button class="main-btn" id="showQuestion">Davom etish 💗</button>
+      </div>
+    </section>
+
+    <section class="screen question" data-page="question">
+      <div class="big-pulse">💖</div>
+      <h2>Charos...</h2>
+      <p class="question-text">Meni sevasanmi?</p>
+      <div class="love-actions">
+        <button class="yes-btn" id="yesBtn">Ha, sevaman ❤️</button>
+        <button class="no-btn" id="noBtn">Yo'q...</button>
+      </div>
+      <div class="answer-box hidden" id="answerBox"></div>
+    </section>
+  </main>
+
+  <script src="/script.js"></script>
+</body>
+</html>

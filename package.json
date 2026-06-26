@@ -1,0 +1,9 @@
+{
+  "name": "charos-final-love",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "bun server.js",
+    "start": "bun server.js"
+  }
+}
